@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
+
+body,
+html {
+  font-family: 'Jost', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-image: url('https://cms.nationalmuseumsni.org/sites/default/files/styles/responsive/public/1920/1080/1/2022-09/Art%20gallery.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+button {
+  font-family: 'Jost', sans-serif;
+  appearance: button;
+  background-color: #3c2a01;
+  border: 1px solid #302200;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #2b2100 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  opacity: 0.9;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.a-content-start {
+  align-content: flex-start;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.space-btw {
+  justify-content: space-between;
+}
+
+.grow1 {
+  flex: 1;
+}
+
+.grow2 {
+  flex: 2;
+}
+
+.grow3 {
+  flex: 3;
+}
+
+.p-50 {
+  padding: 50px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  margin: 10px;
+}
+
+/*non reusable classes*/
+
+.logo {
+  width: min-content;
+  height: 500px;
+  text-align: center;
+  margin: 40px;
+}
+
+/* NAV */
+.toolbar {
+  padding: 20px;
+  margin: 0px -300px;
+  margin-bottom: 100px;
+
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(255, 235, 192, 0.5);
+}
+
+.toolbar-links {
+  font-size: 2rem;
+  margin: 10px;
+}
+a {
+  color: #a00000;
+  font-weight: 500;
+  text-decoration: none;
+}
+a:focus,
+&:hover,
+&:visited,
+&:link,
+&:active {
+  color: #003209;
+  text-decoration: none;
+}
+
+.register {
+  background-color: #fdfdfd;
+  box-shadow: none;
+  color: #2b2100;
+  opacity: 0.9;
+}
+
+/* Homepage & Posts*/
+
+.sort {
+  margin-left: 70px;
+  margin: 50px;
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  background-color: #2b2100;
+}
+
+.posts-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 1100px;
+  width: 2500px;
+}
+
+.singlePost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  width: 300px;
+  margin-right: 20px;
+  height: 500px;
+  padding: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.singlePost img {
+  width: 250px;
+  height: 300px;
+  margin: 10px 0px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.selected-post-container {
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 1100px;
+  width: 2500px;
+}
+.selected-post-title {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 90px;
+}
+
+.single-post-img {
+  height: 1100px;
+  width: 900px;
+  object-fit: contain;
+  padding-left: 70px;
+}
+
+/* Create Post*/
+.create-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 1100px;
+  width: 2500px;
+}
+
+.create-post-input {
+  padding: 30px 150px;
+  font-size: 1.5rem;
+  font-style: italic;
+  width: 900px;
+  margin: 20px;
+  border-radius: 25px;
+  border-color: #302200;
+}
+
+.create-post-button {
+  margin-top: 50px;
+}
+
+.create-post-title {
+  margin-bottom: 250px;
+}
+/* Profile*/
+
+.profile-container {
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 1100px;
+  width: 2500px;
+}
+
+.profile-input {
+  padding: 30px 150px;
+  font-size: 1.5rem;
+  font-style: italic;
+  width: 900px;
+  margin-top: 350px;
+  margin-bottom: 70px;
+  border-radius: 25px;
+  border-color: #302200;
+}
+
+/* Authentification*/
+
+.auth-form {
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 1100px;
+  width: 2500px;
+  padding: 0px 70px;
+}
+
+.auth-input {
+  padding: 30px 50px;
+  font-size: 1.5rem;
+  font-style: italic;
+  width: 700px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  border-color: #302200;
+}
+
+.auth-button {
+  margin-top: 30px;
+  width: 500px;
+}
